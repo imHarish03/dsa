@@ -1,4 +1,4 @@
-package dsa.pattern.creational.factory;
+package dsa.pattern.creational.factory.message;
 
 public class JSONMessage implements Message {
 

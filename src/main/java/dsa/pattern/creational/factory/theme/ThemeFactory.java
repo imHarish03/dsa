@@ -7,7 +7,8 @@ public class ThemeFactory {
             return new LightTheme();
         } else if (theme.equals("Dark")) {
             return new DarkTheme();
+        }else{
+            throw new RuntimeException("Invalid Theme");
         }
-        return null;
     }
 }
