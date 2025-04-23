@@ -15,5 +15,17 @@ public class Client {
         RemoteControl radioRemote = new BasicRemote(radio);
         radioRemote.togglePower();
         radioRemote.volumeUp();
+
+        /// ////////////////////////////////////
+        SmartDevice smartTv = new TVDevice();
+        SmartRemote smartRemote = new SmartRemote(smartTv);
+
+        System.out.println("--------");
+        smartRemote.togglePower();     // ON
+        smartRemote.volumeUp();        // 60
+        smartRemote.setChannel(45);    // Channel 45
+        smartRemote.mute();            // Mute
+        smartRemote.saveFavoriteChannel(45);
+
     }
 }
