@@ -1,4 +1,4 @@
-package dsa.pattern.structural.bridge;
+package dsa.pattern.structural.bridge.fifo;
 
 public interface LinkedList<T> {
 
