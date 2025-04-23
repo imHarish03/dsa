@@ -1,8 +1,8 @@
-package dsa.pattern.structural.bridge.remote;
+package dsa.pattern.structural.bridge.remote.abstraction;
 
 public abstract class RemoteControl {
     protected Device device;
-  
+
     public RemoteControl(Device device) {
         System.out.println("Remote control created");
         this.device = device;

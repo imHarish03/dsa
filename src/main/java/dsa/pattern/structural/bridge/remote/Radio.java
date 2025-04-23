@@ -1,5 +1,7 @@
 package dsa.pattern.structural.bridge.remote;
 
+import dsa.pattern.structural.bridge.remote.abstraction.Device;
+
 public class Radio implements Device {
     @Override
     public void turnOn() {

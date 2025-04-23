@@ -1,5 +1,9 @@
 package dsa.pattern.structural.bridge.remote;
 
+import dsa.pattern.structural.bridge.remote.abstraction.Device;
+import dsa.pattern.structural.bridge.remote.abstraction.RemoteControl;
+import dsa.pattern.structural.bridge.remote.abstraction.SmartDevice;
+
 public class Client {
     public static void main(String[] args) {
         Device tv = new TV();

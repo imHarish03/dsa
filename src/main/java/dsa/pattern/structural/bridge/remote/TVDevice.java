@@ -1,5 +1,7 @@
 package dsa.pattern.structural.bridge.remote;
 
+import dsa.pattern.structural.bridge.remote.abstraction.SmartDevice;
+
 public class TVDevice implements SmartDevice {
     private int volume;
     private int channel;

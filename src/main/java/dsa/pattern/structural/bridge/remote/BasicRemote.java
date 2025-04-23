@@ -1,5 +1,8 @@
 package dsa.pattern.structural.bridge.remote;
 
+import dsa.pattern.structural.bridge.remote.abstraction.Device;
+import dsa.pattern.structural.bridge.remote.abstraction.RemoteControl;
+
 public class BasicRemote extends RemoteControl {
     private boolean power = false;
     private int volume = 50;
