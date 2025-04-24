@@ -1,4 +1,4 @@
-package dsa.pattern.structural.bridge.remote.abstraction;
+package dsa.pattern.exercise.demo2;
 
 public interface Device {
     void turnOn();

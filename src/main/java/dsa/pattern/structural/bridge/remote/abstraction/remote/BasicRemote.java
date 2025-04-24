@@ -1,7 +1,6 @@
-package dsa.pattern.structural.bridge.remote;
+package dsa.pattern.structural.bridge.remote.abstraction.remote;
 
-import dsa.pattern.structural.bridge.remote.abstraction.Device;
-import dsa.pattern.structural.bridge.remote.abstraction.RemoteControl;
+import dsa.pattern.structural.bridge.remote.abstraction.devicetype.Device;
 
 public class BasicRemote extends RemoteControl {
     private boolean power = false;

@@ -1,6 +1,4 @@
-package dsa.pattern.structural.bridge.remote;
-
-import dsa.pattern.structural.bridge.remote.abstraction.Device;
+package dsa.pattern.structural.bridge.remote.abstraction.devicetype;
 
 public class Radio implements Device {
     @Override

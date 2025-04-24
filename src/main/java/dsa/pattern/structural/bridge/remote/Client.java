@@ -1,8 +1,13 @@
 package dsa.pattern.structural.bridge.remote;
 
-import dsa.pattern.structural.bridge.remote.abstraction.Device;
-import dsa.pattern.structural.bridge.remote.abstraction.RemoteControl;
-import dsa.pattern.structural.bridge.remote.abstraction.SmartDevice;
+import dsa.pattern.structural.bridge.remote.abstraction.devicetype.Device;
+import dsa.pattern.structural.bridge.remote.abstraction.remote.BasicRemote;
+import dsa.pattern.structural.bridge.remote.abstraction.remote.RemoteControl;
+import dsa.pattern.structural.bridge.remote.abstraction.devicetype.SmartDevice;
+import dsa.pattern.structural.bridge.remote.abstraction.devicetype.Radio;
+import dsa.pattern.structural.bridge.remote.abstraction.devicetype.TV;
+import dsa.pattern.structural.bridge.remote.abstraction.devicetype.TVDevice;
+import dsa.pattern.structural.bridge.remote.abstraction.remote.SmartRemote;
 
 public class Client {
     public static void main(String[] args) {

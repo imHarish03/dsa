@@ -1,7 +1,6 @@
-package dsa.pattern.structural.bridge.remote;
+package dsa.pattern.structural.bridge.remote.abstraction.remote;
 
-import dsa.pattern.structural.bridge.remote.abstraction.RemoteControl;
-import dsa.pattern.structural.bridge.remote.abstraction.SmartDevice;
+import dsa.pattern.structural.bridge.remote.abstraction.devicetype.SmartDevice;
 
 public class SmartRemote extends RemoteControl {
     private int currentChannel = 1;

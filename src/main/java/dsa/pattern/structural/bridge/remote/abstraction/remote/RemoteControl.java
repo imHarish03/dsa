@@ -1,4 +1,6 @@
-package dsa.pattern.structural.bridge.remote.abstraction;
+package dsa.pattern.structural.bridge.remote.abstraction.remote;
+
+import dsa.pattern.structural.bridge.remote.abstraction.devicetype.Device;
 
 public abstract class RemoteControl {
     protected Device device;
