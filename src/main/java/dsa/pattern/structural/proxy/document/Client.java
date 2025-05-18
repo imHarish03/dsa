@@ -1,4 +1,4 @@
-package dsa.pattern.structural.proxy;
+package dsa.pattern.structural.proxy.document;
 
 public class Client {
     public static void main(String[] args) {
