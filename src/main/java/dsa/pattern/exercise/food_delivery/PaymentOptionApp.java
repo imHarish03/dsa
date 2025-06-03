@@ -1,5 +1,9 @@
 package dsa.pattern.exercise.food_delivery;
 
+import dsa.pattern.exercise.food_delivery.discount.CouponDiscountDecorator;
+import dsa.pattern.exercise.food_delivery.discount.Discount;
+import dsa.pattern.exercise.food_delivery.discount.RegularDiscount;
+import dsa.pattern.exercise.food_delivery.discount.SeasonalDiscountDecorator;
 import dsa.pattern.exercise.food_delivery.payment.PaymentContext;
 import dsa.pattern.exercise.food_delivery.payment.PaymentFactory;
 import dsa.pattern.exercise.food_delivery.payment.PaymentProcessor;
@@ -9,6 +13,14 @@ import java.util.Optional;
 
 public class PaymentOptionApp {
     public static void main(String[] args) {
+        int amount =100;
+        Discount discount = new RegularDiscount(); // base 10% off
+        discount = new SeasonalDiscountDecorator(discount); // additional 5%
+        discount = new CouponDiscountDecorator(discount); // ₹20 off
+
+        double finalAmount = discount.apply(amount);
+        System.out.println("Final Amount: ₹" + finalAmount);
+
         UserType userType = UserType.GUEST; // Let's say current user is PREMIUM
 
         System.out.println("Available payment methods for " + userType + ":");
@@ -24,7 +36,7 @@ public class PaymentOptionApp {
         paymentModeOptional.ifPresentOrElse(mode -> {
             PaymentProcessor processor = PaymentFactory.getPaymentProcessor(mode);
             if (processor != null) {
-                new PaymentContext(processor).pay(100.0);
+                new PaymentContext(processor).pay(finalAmount);
             } else {
                 System.out.println("No processor found for mode: " + mode);
             }
